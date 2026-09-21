@@ -3,14 +3,19 @@ import tensorflow as tf
 import numpy as np
 import cv2
 from PIL import Image
+import os
 
 # ---------------------------------------------------
 # Load trained model
 # ---------------------------------------------------
 @st.cache_resource
 def load_digit_model():
-    return tf.keras.models.load_model("digit_model.keras")
-
+    model_path = os.path.join(
+        os.path.dirname(__file__),
+        "digit_model.keras"
+    )
+    return tf.keras.models.load_model(model_path)
+# Function calling
 model = load_digit_model()
 
 # ---------------------------------------------------
