@@ -59,7 +59,7 @@ The application allows a user to upload an image of a handwritten digit, preproc
 ## Interface and Prediction Examples
 
 ### App Interface
-![Streamlit Interface](st_Interface.png)
+![Streamlit Interface](st_Interface.png)-------------------------------------------------------------------
 
 #### Prediction Example1
 ![Prediction Result](7_prediction.png)
